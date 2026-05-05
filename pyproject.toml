@@ -28,9 +28,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/hellboxpy/hellbox-metadata"
 
-[tool.setuptools.dynamic]
-version = {attr = "hellbox.jobs.metadata.__version__.__version__"}
-
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = true
