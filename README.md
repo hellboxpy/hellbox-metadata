@@ -42,5 +42,12 @@ with Hellbox("build") as task:
 ## Installation
 
 ```sh
-pip install hellbox-metadata
+hell add hellbox-metadata
+```
+
+## Development
+
+```sh
+uv sync
+uv run pytest
 ```
