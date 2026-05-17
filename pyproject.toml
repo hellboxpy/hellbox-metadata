@@ -10,7 +10,10 @@ readme = "README.md"
 license = {text = "MIT"}
 authors = [{name = "Jack Jennings", email = "jack@standard-library.com"}]
 requires-python = ">=3.11"
-dependencies = ["hellbox", "fonttools"]
+dependencies = [
+    "hellbox",
+    "fonttools",
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Plugins",
@@ -29,9 +32,22 @@ classifiers = [
 Homepage = "https://github.com/hellboxpy/hellbox-metadata"
 
 [dependency-groups]
-dev = ["mdformat"]
+dev = [
+    "mdformat",
+    "ruff>=0,<1",
+    "ty>=0.0.36",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = true
 exclude = ["hellbox", "hellbox.jobs"]
+
+
+[[tool.ty.overrides]]
+include = ["tests/**"]
+
+[tool.ty.overrides.rules]
+unresolved-import = "ignore"
+[tool.uv.sources]
+hellbox = { git = "https://github.com/hellboxpy/hellbox.git" }

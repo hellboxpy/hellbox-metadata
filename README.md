@@ -21,23 +21,23 @@ with Hellbox("build") as task:
 
 ### Supported fields
 
-| Keyword           | nameID | Description            |
+| Keyword | nameID | Description |
 | ----------------- | ------ | ---------------------- |
-| `copyright`       | 0      | Copyright notice       |
-| `family`          | 1      | Family name            |
-| `subfamily`       | 2      | Subfamily name         |
-| `unique_id`       | 3      | Unique font identifier |
-| `full_name`       | 4      | Full font name         |
-| `version`         | 5      | Version string         |
-| `postscript_name` | 6      | PostScript name        |
-| `trademark`       | 7      | Trademark              |
-| `manufacturer`    | 8      | Manufacturer name      |
-| `designer`        | 9      | Designer               |
-| `description`     | 10     | Description            |
-| `vendor_url`      | 11     | Vendor URL             |
-| `designer_url`    | 12     | Designer URL           |
-| `license`         | 13     | License description    |
-| `license_url`     | 14     | License info URL       |
+| `copyright` | 0 | Copyright notice |
+| `family` | 1 | Family name |
+| `subfamily` | 2 | Subfamily name |
+| `unique_id` | 3 | Unique font identifier |
+| `full_name` | 4 | Full font name |
+| `version` | 5 | Version string |
+| `postscript_name` | 6 | PostScript name |
+| `trademark` | 7 | Trademark |
+| `manufacturer` | 8 | Manufacturer name |
+| `designer` | 9 | Designer |
+| `description` | 10 | Description |
+| `vendor_url` | 11 | Vendor URL |
+| `designer_url` | 12 | Designer URL |
+| `license` | 13 | License description |
+| `license_url` | 14 | License info URL |
 
 ## Installation
 

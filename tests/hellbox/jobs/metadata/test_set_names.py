@@ -1,8 +1,8 @@
 import pytest
-from unittest.mock import MagicMock, call, patch
+from unittest.mock import MagicMock, patch
 
 from hellbox.jobs.metadata import SetNames
-from hellbox.jobs.metadata.set_names import NAME_IDS, _update_name
+from hellbox.jobs.metadata.set_names import _update_name
 
 
 class TestUpdateName:
@@ -65,8 +65,10 @@ class TestSetNames:
         copy = MagicMock()
         file.copy.return_value = copy
 
-        with patch("hellbox.jobs.metadata.set_names.ttLib") as mock_ttlib, \
-             patch("hellbox.jobs.metadata.set_names._update_name") as mock_update:
+        with (
+            patch("hellbox.jobs.metadata.set_names.ttLib") as mock_ttlib,
+            patch("hellbox.jobs.metadata.set_names._update_name") as mock_update,
+        ):
             mock_font = MagicMock()
             mock_ttlib.TTFont.return_value = mock_font
 

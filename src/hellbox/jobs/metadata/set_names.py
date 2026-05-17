@@ -26,8 +26,9 @@ def _update_name(name_table, name_id, value):
     existing = [r for r in name_table.names if r.nameID == name_id]
     if existing:
         for record in existing:
-            name_table.setName(value, name_id, record.platformID,
-                               record.platEncID, record.langID)
+            name_table.setName(
+                value, name_id, record.platformID, record.platEncID, record.langID
+            )
     else:
         name_table.setName(value, name_id, 3, 1, 0x0409)
 
