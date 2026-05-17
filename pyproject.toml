@@ -33,6 +33,7 @@ urls.Homepage = "https://github.com/hellboxpy/hellbox-metadata"
 dev = [
   "mdformat",
   "pyproject-fmt>=2.21.2",
+  "pytest>=9.0.3",
   "ruff>=0,<1",
   "ty>=0.0.36",
 ]
